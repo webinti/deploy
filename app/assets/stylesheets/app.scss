@@ -1,0 +1,100 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+$blue: #003bde;
+$violet: #4d5be1;
+$dark: #2e3142;
+$light: #666666;
+/*
+///////
+GENERAL
+///////
+*/
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*
+///////
+COLORS
+///////
+*/
+
+.gradient {
+  background: linear-gradient(90deg, #f7f8fc 0%, #e5ebfa 100%);
+}
+
+.text-dark {
+  color: $dark;
+}
+
+.text-light {
+  color: $light;
+}
+
+.text-blue {
+  color: $blue;
+}
+
+/*
+///////
+STYLES
+///////
+*/
+
+.font-light {
+  font-weight: 300;
+}
+
+.leading-xl {
+  line-height: 2em;
+}
+
+/*
+///////
+ELEMENTS
+///////
+*/
+
+/* Header */
+nav {
+  background-color: #fff;
+}
+
+/* Fonctionnement */
+
+section.how h2:before {
+  content: "";
+  width: 5%;
+  height: 1px;
+  position: absolute;
+  margin-top: -20px;
+  z-index: 10;
+}
+
+section.how .divider:before {
+  border-top-color: $violet;
+  border-top-width: 5px;
+}
+
+section.bg-how {
+  background-image: image-url("call-projet.png");
+  background-position: center left;
+  background-size: initial;
+  background-repeat: no-repeat;
+}
+
+/* Nos points forts */
+section.avantages h2:before {
+  content: "";
+  width: 5%;
+  height: 1px;
+  position: absolute;
+  margin-top: -20px;
+  z-index: 10;
+}
+
+section.avantages .divider:before {
+  border-top-color: $violet;
+  border-top-width: 5px;
+}
